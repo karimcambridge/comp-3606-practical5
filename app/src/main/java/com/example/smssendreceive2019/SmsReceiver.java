@@ -45,9 +45,9 @@ public class SmsReceiver extends BroadcastReceiver
                 String answer = "HONDA";
                 String sms = "";
                 if(answer.toLowerCase().equals(rAnswer.toLowerCase())) {
-                    sms = wrongAnswerFeedback;
-                } else {
                     sms = correctAnswerFeedback;
+                } else {
+                    sms = wrongAnswerFeedback;
                 }
 
                 try {
